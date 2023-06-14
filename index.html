@@ -18,28 +18,116 @@
 
   <!-- SECTION MAIN -->
   <main class="container-fluid">
-    <section class="row">
-      <div class="col-6">
-        <h1>Name QTY EACH TOTAL</h1>
-        <h2>TOTAL:</h2>
-        <button class="btn btn-primary">Pay</button>
+    <section class="row bg-light">
+      <div class="cart col-3 d-flex flex-column justify-content-between p-5">
+        <div>
+          <div class="d-flex justify-content-between">
+            <p class="fs-1">Name</p>
+            <p class="fs-1">Qty</p>
+            <p class="fs-1">Each</p>
+            <p class="fs-1">Total</p>
+          </div>
+          <ul id="cartList">
+            <!-- <li>
+              <p>Cookie Dough</p>
+              <p>Price</p>
+            </li> -->
+          </ul>
+        </div>
+        <div>
+          <div class="d-flex">
+            <p class="fs-1"> Total: </p>
+            <div id="total" class="fs-1"></div>
+          </div>
+          <button onclick="pay()" class="btn btn-primary">Pay</button>
+        </div>
       </div>
-      <div class="col-6">
-        <div class="row">
-          <div class="col-4">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
+      <div class="col-7 p-5 menu fs-1"> ICE CREAM
+        <!-- SECTION ICECREAM -->
+        <section class="row ">
+          <div class="col-4 pt-4">
+            <div onclick="addIceCreamToCart('Cookie Dough') " class="card" style="width: 18rem;">
+              <img src="https://celebratingsweets.com/wp-content/uploads/2014/04/Cookie-Dough-Ice-Cream-1-5.jpg"
+                class="card-img-top menu-img" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title">Cookie Dough</h5>
+                <p class="card-text">$1.25</p>
               </div>
             </div>
           </div>
-          <div class="col-4">OPTION2</div>
-          <div class="col-4">OPTION3</div>
-        </div>
+          <div class="col-4 pt-4">
+            <div onclick="addIceCreamToCart('Strawberry') " class="card" style="width: 18rem;">
+              <img src="https://www.realfoodwithjessica.com/wp-content/uploads/2017/07/paleostrawberryicecream2.jpg"
+                class="card-img-top menu-img" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Strawberry</h5>
+                <p class="card-text">$1.25</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 pt-4">
+            <div onclick=" addIceCreamToCart('Vanilla')" class="card" style="width: 18rem;">
+              <img
+                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/ultimate-vanilla-ice-cream-1628511695.jpg"
+                class="card-img-top menu-img" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Vanilla</h5>
+                <p class="card-text">$1.00</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SECTION TOPPINGS -->
+        <section class="row">
+          <div class="col-4 pt-4">
+            <div onclick=" addToppingToCart('Chocolate Chips')" class="card" style="width: 18rem;">
+              <img
+                src="https://www.eatthis.com/wp-content/uploads/sites/4/2020/05/chocolate-chips.jpg?quality=82&strip=1&resize=640%2C360"
+                class="card-img-top menu-img" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Chocolate Chips'</h5>
+                <p class="card-text">$.25</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 pt-4">
+            <div onclick=" addToppingToCart('Sprinkles')" class="card" style="width: 18rem;">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Sprinkles2.jpg"
+                class="card-img-top menu-img" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Sprinkles</h5>
+                <p class="card-text">$.25</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SECTION CONTAINERS -->
+        <section class="row">
+          <div class="col-4 pt-4">
+            <div onclick=" addContainerToCart('Waffle Cone')" class="card" style="width: 18rem;">
+              <img src="https://m.media-amazon.com/images/I/71VNjBMakfL._SL1500_.jpg" class="card-img-top menu-img"
+                alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Sprinkles</h5>
+                <p class="card-text">$.25</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 pt-4">
+            <div onclick="addContainerToCart('Waffle Bowl')" class="card" style="width: 18rem;">
+              <img src="http://images.wbmason.com/350/L_JOY66050.jpg" class="card-img-top menu-img" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Sprinkles</h5>
+                <p class="card-text">$.25</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div id="iceCreamCone" class="col-2  cone-menu d-flex flex-column align-items-center pt-5">
+        <!-- <p class="bg-success rounded scoop"></p>
+        <p class="bg-success rounded scoop"></p>
+        <p class="bg-success rounded scoop"></p> -->
       </div>
     </section>
   </main>

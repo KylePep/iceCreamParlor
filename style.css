@@ -1,0 +1,88 @@
+/* main {
+  background-color: antiquewhite;
+} */
+
+.cart {
+  height: 100vh;
+}
+
+.menu-img {
+  height: 30vh;
+  object-fit: cover;
+}
+
+.menu {
+  max-height: 100vh;
+  overflow-y: auto;
+  background-color: azure;
+}
+
+.cone-menu {
+  max-height: 100vh;
+  overflow-y: auto;
+  background-color: rgb(123, 32, 109);
+}
+
+.scoop {
+  height: 20vh;
+}
+
+.cone-element {
+  box-shadow: 7px 7px 5px black;
+}
+
+.Strawberry {
+  background-color: pink;
+  width: 6vw;
+  height: 8vh;
+  border-radius: 20px;
+  border-bottom: 1rem solid red;
+}
+
+.Vanilla {
+  background-color: aliceblue;
+  width: 6vw;
+  height: 8vh;
+  border-radius: 20px;
+  border-bottom: 1rem solid lightgoldenrodyellow;
+}
+
+.Cookie-Dough {
+  background-color: antiquewhite;
+  width: 6vw;
+  height: 8vh;
+  border-radius: 20px;
+  border-bottom: 1rem solid burlywood;
+}
+
+.Chocolate-Chips {
+  background-color: chocolate;
+  width: 5vw;
+  height: 3vh;
+  border-radius: 10px;
+  border-bottom: 1rem solid darkred;
+}
+
+.Sprinkles {
+  background-color: aqua;
+  width: 5vw;
+  height: 3vh;
+  border-radius: 10px;
+  border-bottom: 1rem solid darkcyan;
+}
+
+.Waffle-Bowl {
+  background-color: tan;
+  width: 7vw;
+  height: 10vh;
+  border-radius: 10px;
+  border-bottom: 1rem solid brown;
+}
+
+.Waffle-Cone {
+  background-color: tan;
+  width: 4vw;
+  height: 15vh;
+  border-radius: 10px;
+  border-bottom: 1rem solid brown;
+}
